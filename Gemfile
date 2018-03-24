@@ -17,6 +17,7 @@ gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
   gem 'capybara', '~> 2.13'
+  gem 'dotenv-rails', require: 'dotenv/rails-now'
   gem 'rubocop', '~> 0.52.0', require: false
   gem 'selenium-webdriver'
 end
