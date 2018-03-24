@@ -6,7 +6,8 @@ h4 {
 }
 
 p,
-span {
+span,
+li {
   font-family: $body-font;
 }
 
@@ -17,4 +18,8 @@ a {
 
 a:hover {
   color: $color-blue;
+}
+
+li {
+  margin-bottom: 15px;
 }
