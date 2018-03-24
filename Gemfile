@@ -21,12 +21,16 @@ group :development, :test do
   gem 'pry'
   gem 'rubocop', '~> 0.52.0', require: false
   gem 'selenium-webdriver'
+  gem 'rspec-rails', '~> 3.7'
+  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
+  gem 'factory_bot_rails'
 end
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-commands-rspec'
   gem 'web-console', '>= 3.3.0'
 end
 
