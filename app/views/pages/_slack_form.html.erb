@@ -1,0 +1,4 @@
+<%= form_tag "/join-slack", method: "post", class: 'slack-form' do %>
+  <%= text_field_tag :email, '', placeholder: 'Email' %>
+  <%= submit_tag "Invite me", class: 'button' %>
+<% end %>

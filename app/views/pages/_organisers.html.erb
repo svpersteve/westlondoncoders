@@ -1,0 +1,15 @@
+<h1>Organisers</h1>
+
+<div class='card-grid'>
+  <% @organisers.each do |organiser| %>
+    <div class='card'>
+      <img class='card__image' src=<%= organiser.image %> />
+      <h2><%= organiser.name %></h2>
+      <p><%= organiser.role %></p>
+      <p><%= organiser.title %></p>
+      <div class='card__icons'>
+        <%= render partial: 'organiser_links', locals: { organiser: organiser } %>
+      </div>
+    </div>
+  <% end %>
+</div>

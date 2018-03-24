@@ -1,0 +1,15 @@
+<%= render partial: 'shared/wallpaper', locals: { selector: '#group', sources: {'0px' => asset_path('group-small.jpg'), '648px' => asset_path('group-medium.jpg'), '900px' => asset_path('group-large.jpg')} } %>
+
+<div id='group' class='wallpaper'>
+  <h1 class='wallpaper__text'>Learn, discuss and practice code</h1>
+</div>
+
+<div class='container'>
+  <%= render 'about' %>
+  <p>Join us on Slack to chat with our community</p>
+  <span class='u-center-on-mobile'><%= render 'slack_form' %></span>
+</div>
+
+<div class='container center'>
+  <%= render 'organisers' %>
+</div>

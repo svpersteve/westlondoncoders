@@ -10,3 +10,21 @@
     height: 95vh;
   }
 }
+
+.wallpaper__text {
+  background-color: $color-white;
+  display: none;
+  padding: 5px;
+
+  @media #{$to-large} {
+    font-size: 22px;
+    margin-left: 20px;
+  }
+
+  @media #{$from-large} {
+    display: inline-block;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+  }
+}

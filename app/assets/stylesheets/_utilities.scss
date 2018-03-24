@@ -1,0 +1,15 @@
+.u-center {
+  text-align: center;
+}
+
+.u-center-on-mobile {
+  @media #{$to-medium} {
+    text-align: center;
+  }
+}
+
+.slack-form {
+  input[type='text'] {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,1 @@
+Organiser.create(name: 'Jerome Clarke', image: 'https://pbs.twimg.com/profile_images/971161748823781376/y1W6FusA_400x400.jpg', role: 'Co-founder', title: 'Associate iOS Developer', linkedin: 'jeromejclarke', twitter: 'jeromejjclarke', github: 'JeromeJJClarke')
