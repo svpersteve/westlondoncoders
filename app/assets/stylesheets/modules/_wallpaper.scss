@@ -1,0 +1,12 @@
+.wallpaper {
+  overflow: hidden;
+  height: 30vh;
+
+  @media #{$from-medium} {
+    height: 50vh;
+  }
+
+  @media #{$from-large} {
+    height: 95vh;
+  }
+}
