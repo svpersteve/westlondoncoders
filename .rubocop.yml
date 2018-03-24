@@ -1,0 +1,36 @@
+AllCops:
+  CacheRootDirectory: tmp/cache
+  AllowSymlinksInCacheRootDirectory: true
+  MaxFilesInCache: 8000
+  TargetRubyVersion: 2.5
+
+  Include:
+    - Rakefile
+    - config.ru
+  Exclude:
+    - .bundle/**/*
+    - bin/**/*
+    - log/**/*
+    - public/**/*
+    - tmp/**/*
+    - vendor/bundle/**/*
+    - node_modules/**/*
+    - db/schema.rb
+    - Gemfile
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/LineLength:
+  Exclude:
+    - 'config/environments/production.rb'
+    - 'config/initializers/backtrace_silencers.rb'
+    - 'config/puma.rb'
+    - 'config/environments/test.rb'
+    - 'config/initializers/wrap_parameters.rb'
+    - 'config/environments/development.rb'
+    - 'Rakefile'
+    - 'config/application.rb'
