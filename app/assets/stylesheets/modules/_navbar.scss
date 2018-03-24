@@ -1,0 +1,33 @@
+.navbar {
+  @include flex($justify-content: space-between);
+  height: 44px;
+  padding: 0 15px;
+  border-bottom: solid 1px $color-border;
+}
+
+.navbar__logo {
+  color: $color-blue;
+
+  img {
+    margin-bottom: -3px;
+  }
+}
+
+.navbar__menu {
+  @include flex;
+  display: block;
+
+  a {
+    border-bottom: solid 2px transparent;
+    padding-bottom: 11px;
+  }
+
+  a:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .is-selected {
+    color: $color-blue;
+    border-bottom: solid 2px $color-blue;
+  }
+}
