@@ -1,17 +1,17 @@
 <% if organiser.linkedin.present? %>
   <%= link_to "https://linkedin.com/#{organiser.linkedin}", target: '__blank' do %>
-    <i class='fa fa-linkedin-square'></i>
+    <i class='fa fa-linkedin-square' id=<%= "linkedin-" + organiser.linkedin %>></i>
   <% end %>
 <% end %>
 
 <% if organiser.github.present? %>
   <%= link_to "https://github.com/#{organiser.github}", target: '__blank' do %>
-    <i class='fa fa-github-square'></i>
+    <i class='fa fa-github-square' id=<%= "github-" + organiser.github %>></i>
   <% end %>
 <% end %>
 
 <% if organiser.twitter.present? %>
   <%= link_to "https://twitter.com/#{organiser.twitter}", target: '__blank' do %>
-    <i class='fa fa-twitter-square'></i>
+    <i class='fa fa-twitter-square' id=<%= "twitter-" + organiser.twitter %>></i>
   <% end %>
 <% end %>
